@@ -9,7 +9,7 @@
     maximumFractionDigits: 2,
   });
 
-  const addMoneyAmounts = [1000000, 50000000, 1000000000];
+  const addMoneyAmounts = [10000000, 500000000, 1000000000];
 </script>
 
 
