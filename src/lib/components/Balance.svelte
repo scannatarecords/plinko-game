@@ -3,15 +3,15 @@
   import { flyAndScale } from '$lib/utils/transitions';
   import { Popover } from 'bits-ui';
 
-  let balanceFormatted = $derived(
-    $balance.toLocaleString('en-US', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    }),
-  );
+  // Reactive statement to format the balance whenever it changes
+  $: balanceFormatted = $balance.toLocaleString('en-US', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
 
   const addMoneyAmounts = [100000, 500000, 10000000];
 </script>
+
 
 <div class="flex overflow-hidden rounded-md">
   <div
